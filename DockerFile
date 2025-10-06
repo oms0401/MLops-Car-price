@@ -1,5 +1,5 @@
 # 1. Start from a slim Python base image to keep the size down.
-FROM python:3.13-slim
+FROM python:3.10-slim
 
 # 2. Copy the pre-built `uv` binary from the official image.
 # This is much faster than installing it with pip or curl.
