@@ -1,0 +1,25 @@
+# 1. Start from a slim Python base image to keep the size down.
+FROM python:3.13-slim
+
+# 2. Copy the pre-built `uv` binary from the official image.
+# This is much faster than installing it with pip or curl.
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /usr/local/bin/
+
+# 3. Set the working directory.
+WORKDIR /app
+
+# 4. Copy only the pyproject.toml file to leverage Docker layer caching.
+# The next step will only re-run if this file changes.
+COPY pyproject.toml .
+
+# 5. Use `uv pip sync` to install dependencies from pyproject.toml into a virtual environment.
+# `uv pip sync` is faster and ensures the environment exactly matches your project's dependencies.
+RUN uv venv && \
+    . .venv/bin/activate && \
+    uv pip sync --no-cache pyproject.toml
+
+# 6. Now copy the rest of your application code.
+COPY . .
+
+# 7. Set the command to run the application using the uvicorn from the virtual env.
+CMD [".venv/bin/uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
