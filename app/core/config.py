@@ -1,7 +1,7 @@
 import os
-from dotenv import loadenv
+from dotenv import load_dotenv
 
-loadenv()
+load_dotenv()
 
 class Setting:
     PROJECT_NAME='CAR-PRICE-API'

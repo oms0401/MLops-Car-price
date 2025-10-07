@@ -8,7 +8,7 @@ class AuthInput(BaseModel):
     username : str
     password : str
 
-@router('/login')
+@router.post('/login')
 def login(auth : AuthInput):
     if(auth.username == "admin") and (auth.password == "admin"):
         token = create_token({'sub': auth.username})
