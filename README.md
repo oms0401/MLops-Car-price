@@ -28,7 +28,7 @@ This project is a **Machine Learning-powered API** built using **FastAPI** to pr
 
 Watch the complete walkthrough of the Car Price Prediction application:
 
-https://user-images.githubusercontent.com/YOUR-USERNAME/YOUR-VIDEO-ID.mp4
+
 
 *Or use this format for videos in assets folder:*
 
