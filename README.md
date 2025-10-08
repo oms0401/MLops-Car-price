@@ -23,6 +23,14 @@ This project is a **Machine Learning-powered API** built using **FastAPI** to pr
 *Replace with your actual screenshot from the assets folder*
 
 ---
+## 🎥 Demo Video
+
+Watch the complete walkthrough of the Car Price Prediction application:
+
+[![Watch Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-red?style=for-the-badge&logo=youtube)](https://drive.google.com/file/d/1TLu5Bf-JUpu5V9c--EiYIaGwnsqQVnPk/view?usp=sharing)
+
+
+---
 
 
 
