@@ -24,19 +24,7 @@ This project is a **Machine Learning-powered API** built using **FastAPI** to pr
 
 ---
 
-## 🎥 Demo Video
 
-Watch the complete walkthrough of the Car Price Prediction application:
-
-
-
-*Or use this format for videos in assets folder:*
-
-![Demo Video](./assets/mlops-demo.mp4)
-
-**Note**: Upload your demo video to the `assets` folder or use GitHub's video upload feature in issues/PRs to get the direct link.
-
----
 
 ## 🧠 Model Input Variables
 
